@@ -1,0 +1,72 @@
+*{margin: 0;padding: 0;}
+
+main{
+    margin: 25px auto;
+    width: 700px;
+    border: 2px solid rgba(64, 124, 235, 0.548);
+    border-radius: 10px;
+    transition-duration: .4s;
+}
+
+main:hover{
+    transition-duration: .4s;
+    box-shadow: rgba(64, 124, 235, 0.548) 0px 0px 5px 10px;
+}
+
+ul{list-style: none;}
+
+/* Profil section */
+#profil{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#profilImg{width: 300px;}
+#profilImg img{max-width: 200px;}
+
+#profilDet{width: 300px; padding-top: 40px;}
+/* End profil */
+
+
+/* Body */
+#body_1{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+section{width: 50%;}
+
+.gauche{padding-right: 20px;}
+
+.competences ul li {display: inline-block;margin: 8px;}
+
+/* icons colors */
+.fa-html5{color: #ff6600;}
+.fa-css3-alt{color: #1a86eb;}
+.fa-js-square{color: #eeff00;}
+.fa-angular{color: #e60a0a;}
+.fa-react{color: #5dcbf7;}
+.fa-node{color: #3dda8b;}
+.fa-php{color: #7b6dd3;}
+.fa-linkedin{color: #1188f8}
+.fa-github-alt{color: #8650aa}
+.fa-fly{color: #20ca09}
+
+/* some text */
+span{font-weight: 600;}
+
+/* links */
+a{color: rgba(64, 124, 235, 0.548); text-decoration: none;}
+
+/* hover effects icones and images */
+.fab, img{transition-duration: .4s;}
+.fab:hover, img:hover{transition-duration: .4s;transform: scale(1.1);}
+
+
+/* **** Tooltip **** */
+.tooltip {position: relative;display: inline-block;}
+.tooltip .tooltiptext {visibility: hidden;width: 120px;background-color: #000;color: #fff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;bottom: 125%;left: 50%;margin-left: -60px;opacity: 0;transition: opacity 0.3s;}
+.tooltip .tooltiptext::after {content: "";position: absolute;top: 100%;left: 50%;margin-left: -5px;border-width: 5px;border-style: solid;border-color: #000 transparent transparent transparent;}
+.tooltip:hover .tooltiptext {visibility: visible;opacity: 1;}
