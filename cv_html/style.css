@@ -1,4 +1,5 @@
 *{margin: 0;padding: 0;}
+body{background-color: rgb(252, 245, 230);}
 
 main{
     margin: 25px auto;
@@ -6,7 +7,14 @@ main{
     border: 2px solid rgba(64, 124, 235, 0.548);
     border-radius: 10px;
     transition-duration: .4s;
+    /* box-shadow: rgba(64, 124, 235, 0.548) 0px 0px 5px 10px;     */
 }
+
+@media screen and (max-width: 740px) {
+    main{
+        margin: 20px 20px;
+    }
+  }
 
 main:hover{
     transition-duration: .4s;
@@ -36,6 +44,8 @@ ul{list-style: none;}
     padding: 30px;
 }
 
+h2{margin-bottom: 10px;}
+
 section{width: 50%;}
 
 .gauche{padding-right: 20px;}
@@ -48,11 +58,18 @@ section{width: 50%;}
 .fa-js-square{color: #eeff00;}
 .fa-angular{color: #e60a0a;}
 .fa-react{color: #5dcbf7;}
-.fa-node{color: #3dda8b;}
+.fa-node, .fa-check-circle{color: #3dda8b;}
 .fa-php{color: #7b6dd3;}
 .fa-linkedin{color: #1188f8}
 .fa-github-alt{color: #8650aa}
 .fa-fly{color: #20ca09}
+.fa-mobile, .fa-at{color: #191970}
+
+
+/* mail tooltip width */
+.mail .tooltiptext{
+    width: 200px !important;
+}
 
 /* some text */
 span{font-weight: 600;}
@@ -60,7 +77,7 @@ span{font-weight: 600;}
 /* links */
 a{color: rgba(64, 124, 235, 0.548); text-decoration: none;}
 
-/* hover effects icones and images */
+/* icones and images hover effects */
 .fab, img{transition-duration: .4s;}
 .fab:hover, img:hover{transition-duration: .4s;transform: scale(1.1);}
 
